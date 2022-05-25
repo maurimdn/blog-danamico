@@ -1,3 +1,4 @@
+
 body{
     font-size: 16pt;
 }
@@ -7,6 +8,13 @@ body{
 
 }
 
+.section{
+}
+
+.hiddenSection{
+    display: none;
+
+}
 /* MENU */
 
 .menuBar{
@@ -63,11 +71,39 @@ body{
 
 .home-post-title{
     background: #fff;
+    cursor: pointer;
     padding: 3px;
     padding-left: 25px;
     padding-right: 25px;
     border-radius: 2px;
     font-size: 90%;
     display: inline-block;
+}
 
+.home-post-title:hover{
+    background:rgb(134, 99, 99);
+    cursor: pointer;
+    padding: 3px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 2px;
+    font-size: 90%;
+    display: inline-block;
+}
+
+
+/* SECTON PROFILE */
+.aboutMeText{
+    margin-top: 30px;
+}
+
+/* .aboutMeProfile{
+    min-height: 200px;
+} */
+
+
+/* FOOTER */
+
+.footer{
+    font-size: 90%;
 }
