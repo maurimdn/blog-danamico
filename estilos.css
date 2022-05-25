@@ -8,7 +8,8 @@ body{
 
 }
 
-.section{
+.sectionContainer{
+    box-shadow: rgba(2, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .hiddenSection{
@@ -23,8 +24,7 @@ body{
     padding-top: 20px;
     padding-bottom: 10px;
     border-top: 2px solid #ccc;
-    border-bottom: 2px solid #ccc;
-
+    border-bottom: 2px solid#ccc;
     font-size: 10 0%;
 }
 

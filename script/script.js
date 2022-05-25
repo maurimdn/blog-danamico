@@ -2,6 +2,8 @@ const title = document.getElementById("title");
 const footer = document.getElementById("footer");
 const menuBar = document.getElementById("menuBar");
 const aboutMeText = document.getElementById("aboutMeText");
+const sectionsContainer = document.getElementById("sections")
+
 
 // v.global define que seccion veremos
 let currentSection = "home";
@@ -9,6 +11,7 @@ let currentSection = "home";
 title.innerHTML = blogs.title;
 footer.innerHTML = "este es el footer "+blogs.title;
 
+// MENU
 let menuBarHtml = '';
 blogs.menu.forEach(e=> {
     menuBarHtml +=`
@@ -18,6 +21,22 @@ blogs.menu.forEach(e=> {
 
 menuBar.innerHTML = menuBarHtml;
 
+// SECTIONS
+let sectionHtml = '';
+blogs.sections.forEach(e=>{
+    sectionHtml +=`
+    <div id="section-${e.name}" class="section hiddenSection" >
+        <div class="container sectionContainer">
+            <div class="row">
+                <div class="col-12">
+                ${e.content}                
+                </div>
+            </div>
+        </div>
+    </div>
+    `
+})
+sectionsContainer.innerHTML += sectionHtml;
 
 // ABOUTME
 aboutMeText.innerHTML = blogs.aboutMe.text
