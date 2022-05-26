@@ -7,6 +7,12 @@ blogs = {
         {link:"aboutMe", name:"about me"},
         {link:"contacto", name:"contacto"}
     ],
+    social:[
+       {icon:"fb.jpg", title:"Facebook",url:"https://www.facebook.com/"},
+       {icon:"tw.jpg",title:"Twitter", url:"https://twitter.com"},
+       {icon:"insta.jpg", title:"Instagram",url:"https://instagram.com"}
+
+    ],
     sections:[
         {
          name:"contacto",

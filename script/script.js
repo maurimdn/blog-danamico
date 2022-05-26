@@ -1,8 +1,9 @@
 const title = document.getElementById("title");
-const footer = document.getElementById("footer");
+const redes = document.getElementById("socialRedes");
 const menuBar = document.getElementById("menuBar");
 const aboutMeText = document.getElementById("aboutMeText");
 const sectionsContainer = document.getElementById("sections")
+const footer = document.getElementById("footer");
 
 
 // v.global define que seccion veremos
@@ -10,6 +11,19 @@ let currentSection = "home";
 
 title.innerHTML = blogs.title;
 footer.innerHTML = "este es el footer "+blogs.title;
+
+// REDES SOCIALES
+let socialHtml = '';
+blogs.social.forEach((e)=>{
+    socialHtml +=`
+    <a href="${e.url}" target="_blank" title="${e.title}">
+    <div class="socialButton" style="background-image:url(/images/${e.icon});"></div>
+    </a> 
+    `
+})
+
+redes.innerHTML = socialHtml;
+
 
 // MENU
 let menuBarHtml = '';

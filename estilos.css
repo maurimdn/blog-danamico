@@ -16,6 +16,26 @@ body{
     display: none;
 
 }
+
+/* SOCIAL BUTTOM */
+.container .row
+.socialContainer{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.socialContainer a{
+    text-decoration: none;
+}
+ 
+
+.socialButton{
+    height: 30px;
+    width: 30px;
+    background-size: contain;
+    display: inline-block;
+}
+
 /* MENU */
 
 .menuBar{
