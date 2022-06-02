@@ -127,3 +127,28 @@ body{
 .footer{
     font-size: 90%;
 }
+
+/* BLOG */
+.blogListLink{
+    font-size: 200%;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.blogListDescription{
+    color: rgb(117, 59, 59);
+    font-size: 100%;
+}
+
+
+.blogListPhoto{
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 150px;
+}
+
+.blogListFooter{
+    color: rgb(105, 61, 61);
+    cursor: pointer;
+    font-size: 90%;
+}

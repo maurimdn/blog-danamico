@@ -1,6 +1,7 @@
 const title = document.getElementById("title");
 const redes = document.getElementById("socialRedes");
 const menuBar = document.getElementById("menuBar");
+
 const aboutMeText = document.getElementById("aboutMeText");
 const sectionsContainer = document.getElementById("sections")
 const footer = document.getElementById("footer");
@@ -56,6 +57,36 @@ sectionsContainer.innerHTML += sectionHtml;
 aboutMeText.innerHTML = blogs.aboutMe.text
 
 
+
+// blogListContainer
+let blogListHtml = '';
+blogs.posts.forEach((e)=>{
+    blogListHtml +=`
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+              <div class="blogListPhoto" style="background-image:url(/images/${e.img})"></div>
+            </div>    
+
+            <div class="col-6">
+              <div class="blogListLink" onClick="goPost('${e.id}')">
+                ${e.title}
+              </div>
+                <div class="blogListDescription">${e.description}</div>
+                <br/>
+                <span class="blogListFooter" onClick="goPost('${e.id}')"><b>Ver articulo completo...</b></span>
+            </div>
+        </div>
+    </div> 
+    <br/>
+    `
+})
+
+document.querySelector("#blogListContainer").innerHTML = blogListHtml;
+
+
+
+
 // change section
 function changeSection(name){
     currentSection = name;
@@ -67,5 +98,14 @@ document.querySelectorAll('.section').forEach(e=>{
     e.classList.add('hiddenSection')});
 document.querySelector('#section-' + currentSection).classList.remove('hiddenSection');
 }
+
+function goPost(id){
+    let currentArticle = blogs.posts.find(e => e.id == id);
+    document.getElementById("postTitle").innerHTML = currentArticle.title
+    document.getElementById("postContent").innerHTML = currentArticle.content
+
+    changeSection('article')
+}
+
 
 loandSection()
