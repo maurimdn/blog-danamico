@@ -101,6 +101,7 @@ document.querySelector('#section-' + currentSection).classList.remove('hiddenSec
 
 function goPost(id){
     let currentArticle = blogs.posts.find(e => e.id == id);
+    document.getElementById("img").setAttribute("src", "/images/" + currentArticle.img);
     document.getElementById("postTitle").innerHTML = currentArticle.title
     document.getElementById("postContent").innerHTML = currentArticle.content
 

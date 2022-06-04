@@ -64,9 +64,9 @@ blogs = {
     posts:[
            {
             id: 0,
-            title:'Articulo 1',
+            title:`<h3>titulo del articulo 1</h3>`,
             description:'descrption 1',
-            content:`<h3>titulo del articulo 1</h3>
+            content:`
              <br>
              <p>
              Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.
@@ -82,8 +82,8 @@ blogs = {
           {
             id: 1,
             description:'descrption 2',
-            title:'Articulo 2',
-            content:`<h3>titulo del articulo 1</h3>
+            title:`<h3>titulo del articulo 2</h3>`,
+            content:`
              <br>
              <p>
              Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.
@@ -98,8 +98,8 @@ blogs = {
           {
             id: 3,
             description:'descrption 3',
-            title:'Articulo 3',
-            content:`<h3>titulo del articulo 3</h3>
+            title:`<h3>titulo del articulo 3</h3>`,
+            content:`
              <br>
              <p>
              Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.
