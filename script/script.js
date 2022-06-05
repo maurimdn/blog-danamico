@@ -84,6 +84,29 @@ blogs.posts.forEach((e)=>{
 
 document.querySelector("#blogListContainer").innerHTML = blogListHtml;
 
+// LEVEL BLOG
+
+blogs.posts.sort((a,b)=>{
+    return b.level - a.level;
+})
+
+let homePosts = blogs.posts.slice(0,6);
+
+homePosts.forEach((post, index)=>{
+    document.getElementById("homePostTitle"+index).innerHTML = post.title;
+    document.getElementById("homePostPhoto"+index).style.backgroundImage = "url(/images/" + post.img + ")";
+    document.getElementById("homePostCol"+index).classList.remove("hidden")
+})
+
+
+document.getElementById("homePostTitle0").innerHTML += `
+<br>
+${homePosts[0].description}
+</br>
+<span class="blogListFooter" onClick="goPost('${homePosts[0].id}')"><b>Ver articulo completo...</b></span>
+`
+
+
 
 
 

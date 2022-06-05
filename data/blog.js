@@ -64,8 +64,8 @@ blogs = {
     posts:[
            {
             id: 0,
-            title:`<h3>titulo del articulo 1</h3>`,
             description:'descrption 1',
+            title:`<h3>titulo del articulo 1</h3>`,
             content:`
              <br>
              <p>
@@ -76,7 +76,7 @@ blogs = {
             `,
             tags:'blog, post, texto',
             img:'img1.jpg',
-            level:''
+            level:'1'
           },
 
           {
@@ -93,7 +93,7 @@ blogs = {
             `,
             tags:'blog, post, texto',
             img:'img2.jpg',
-            level:''
+            level:'3'
           },
           {
             id: 3,
@@ -108,10 +108,42 @@ blogs = {
              </p>
             `,
             tags:'blog, post, texto',
-            img:'img1.jpg',
-            level:''
+            img:'img2.jpg',
+            level:'2'
           },
 
+          {
+            id: 4,
+            description:'descrption 4',
+            title:`<h3>titulo del articulo 4</h3>`,
+            content:`
+             <br>
+             <p>
+             Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.
+              The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts o
+              f Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:
+             </p>
+            `,
+            tags:'blog, post, texto',
+            img:'img1.jpg',
+            level:'20'
+          },
+          {
+            id: 5,
+            description:'descrption 4',
+            title:`<h3>titulo del articulo 4</h3>`,
+            content:`
+             <br>
+             <p>
+             Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.
+              The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts o
+              f Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:
+             </p>
+            `,
+            tags:'blog, post, texto',
+            img:'img2.jpg',
+            level:'30'
+          },
 
         ]
 
