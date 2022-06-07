@@ -2,7 +2,7 @@ const title = document.getElementById("title");
 const redes = document.getElementById("socialRedes");
 const menuBar = document.getElementById("menuBar");
 
-const aboutMeText = document.getElementById("aboutMeText");
+
 const sectionsContainer = document.getElementById("sections")
 const footer = document.getElementById("footer");
 
@@ -54,7 +54,11 @@ blogs.sections.forEach(e=>{
 sectionsContainer.innerHTML += sectionHtml;
 
 // ABOUTME
-aboutMeText.innerHTML = blogs.aboutMe.text
+
+document.getElementById("homeProfile").innerHTML = blogs.aboutMe.textShort;
+document.getElementById("aboutMeText").innerHTML = blogs.aboutMe.textLong; 
+
+
 
 
 
@@ -93,7 +97,9 @@ blogs.posts.sort((a,b)=>{
 let homePosts = blogs.posts.slice(0,6);
 
 homePosts.forEach((post, index)=>{
-    document.getElementById("homePostTitle"+index).innerHTML = post.title;
+    document.getElementById("homePostTitle"+index).innerHTML +=`
+    <span class="blogListFooter" onClick="goPost('${post.id}')"><b>${post.title}</b></span>
+    `;
     document.getElementById("homePostPhoto"+index).style.backgroundImage = "url(/images/" + post.img + ")";
     document.getElementById("homePostCol"+index).classList.remove("hidden")
 })
@@ -106,7 +112,16 @@ ${homePosts[0].description}
 <span class="blogListFooter" onClick="goPost('${homePosts[0].id}')"><b>Ver articulo completo...</b></span>
 `
 
-
+// search
+function search(){
+    let query = document.getElementById("search").value;
+    let searchResult = document.getElementById("searchResult");
+    let searchResultHtml = '';
+    searchResultHtml = "hola"
+    searchResult.innerHTML = searchResultHtml;
+    currentSection = 'search';
+    loandSection(); 
+}
 
 
 

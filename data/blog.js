@@ -5,7 +5,6 @@ blogs = {
         {link:"home", name:"home"},
         {link:"info", name:"info"},
         {link:"aboutMe", name:"about me"},
-        {link:"new", name:"noticias"},
         {link:"contacto", name:"contacto"},
         {link:"blog", name:"posts"}
     ],
@@ -55,8 +54,15 @@ blogs = {
     ],
 
     aboutMe:{
-        text:` 
+        textShort:` 
           <h1>Blog personal</h1>
+          <p>Este es la descriptcion de un <i>blog personal</i></p>
+        `,
+        textLong:` 
+          <h1>Blog personal</h1>
+          <p>Este es la descriptcion de un <i>blog personal</i></p>
+          <p>Este es la descriptcion de un <i>blog personal</i></p>
+          <p>Este es la descriptcion de un <i>blog personal</i></p>
           <p>Este es la descriptcion de un <i>blog personal</i></p>
         `,
     },

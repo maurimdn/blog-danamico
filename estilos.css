@@ -35,6 +35,16 @@ body{
     background-size: contain;
     display: inline-block;
 }
+/* SEARCH  */
+.searchText{
+ margin-top: 20px;
+}
+
+.fas{
+    margin-top: 30px;
+    cursor: pointer;
+}
+
 
 /* MENU */
 
@@ -130,7 +140,7 @@ body{
 
 /* BLOG */
 .blogListLink{
-    font-size: 200%;
+    font-size: 100%;
     margin-bottom: 15px;
     cursor: pointer;
 }
