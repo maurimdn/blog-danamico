@@ -97,7 +97,7 @@ blogs = {
               f Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:
              </p>
             `,
-            tags:'blog, post, texto',
+            tags:'blog, cafe, texto',
             img:'img2.jpg',
             level:'3'
           },
@@ -113,7 +113,7 @@ blogs = {
               f Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:
              </p>
             `,
-            tags:'blog, post, texto',
+            tags:'blog, futbol, texto',
             img:'img2.jpg',
             level:'2'
           },
@@ -146,7 +146,7 @@ blogs = {
               f Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:
              </p>
             `,
-            tags:'blog, post, texto',
+            tags:'blog, basket, texto',
             img:'img2.jpg',
             level:'30'
           },
